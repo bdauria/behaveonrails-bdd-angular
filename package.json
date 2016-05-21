@@ -1,0 +1,19 @@
+{
+  "name": "angular-authentication",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.5",
+    "angular-cookie": "^4.1.0",
+    "angular-route": "^1.5.5",
+    "ng-token-auth": "0.0.29",
+    "nock": "^8.0.0",
+    "zombie": "^4.2.1"
+  }
+}

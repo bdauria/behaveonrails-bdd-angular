@@ -1,0 +1,16 @@
+%h2
+  Sign in
+%h3
+  {{ authError }}
+%form{'ng-init': 'loginForm = {}', 'ng-submit': 'handleLoginBtnClick()', role: 'form'}
+  .form-group
+    %label email
+    %br
+    %input{name: 'email', 'ng-model': 'loginForm.email', type: 'email'}
+  .form-group
+    %label password
+    %br
+    %input{name: 'password', 'ng-model': 'loginForm.password', type: 'password'}
+  %button{type: 'submit'}
+    Sign in
+

@@ -1,0 +1,20 @@
+%h2
+  Sign up
+%h3
+  {{ authError }}
+%form{'ng-init': 'registrationForm = {}', 'ng-submit': 'handleRegBtnClick()', role: 'form'}
+  .form-group
+    %label email
+    %br
+    %input{name: 'email', 'ng-model': 'registrationForm.email', type: 'email'}
+  .form-group
+    %label password
+    %br
+    %input{name: 'password', 'ng-model': 'registrationForm.password', type: 'password'}
+  .form-group
+    %label password confirmation
+    %br
+    %input{name: 'password_confirmation', 'ng-model': 'registrationForm.password_confirmation', type: 'password'}
+  %button{type: 'submit'}
+    Sign up
+

@@ -1,0 +1,16 @@
+%h2
+  Home
+%h3{ 'ng-show': 'user.email' }
+  Welcome {{ user.email }}!
+
+%p{ 'ng-show': 'user.email'}
+  %a{ 'ng-href': '#', 'ng-click': 'signOut()'}
+    Sign out
+
+%p{ 'ng-show': '!user.email'}
+  %a{ 'ng-href': '#/sign_up'}
+    Sign up
+  %br
+  %a{ 'ng-show': '!user.email', 'ng-href': '#/sign_in'}
+    Sign in
+
